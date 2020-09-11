@@ -31,8 +31,7 @@ namespace registro_datos
             int menu;
             int endprog = 0;
 
-            string delimiter = ", ";
-            string defaultext = "Cedula" + delimiter + "Nombres" + delimiter + "Apellidos" + delimiter + "Edad";
+            string defaultext = "Cedula, Nombres, Apellidos, Edad";
             using (StreamWriter sw = File.CreateText(filePath))
             {
                 sw.WriteLine(defaultext);
@@ -53,7 +52,6 @@ namespace registro_datos
                         }
                     break;
                     case 2:
-    
                     break;
                     case 3:
                         endprog++;
